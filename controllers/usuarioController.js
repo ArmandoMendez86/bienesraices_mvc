@@ -87,7 +87,16 @@ const registrar = async (req, resp) => {
     pagina: "Cuenta creada correctamente",
     mensaje: "Hemos enviado un email de confirmación, presiona en el enlace",
   });
-};
+}
+
+//Comprobando la cuenta
+const confirmar = (req, res)=>{
+  const {token}= req.params;
+
+  //Verificar si el token es valido
+
+  //Confirmar la cuenta
+}
 
 const formularioRecuperarPassword = (req, resp) => {
   resp.render("auth/olvide-password", {
@@ -100,4 +109,5 @@ export {
   formularioRegistro,
   formularioRecuperarPassword,
   registrar,
+  confirmar
 };
