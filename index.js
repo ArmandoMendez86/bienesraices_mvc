@@ -13,7 +13,7 @@ app.use(express.urlencoded({extended:true}));
 //habilitar cookie parser
 app.use(cookieParser())
 
-//Habilitar CRSF
+//Habilitar CRSF manera global
 app.use(csurf({cookie:true}))
 
 //Conexion a la base de datos
